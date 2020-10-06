@@ -14,5 +14,5 @@ You need a few things before getting started:
 1. Fork or clone the repository.
 1. Run `npm install` on the directory.
 1. Replace the environment values with your own Telegram Bot API and Chat ID on Telegram.
-1. Use your favourite automated tool, execute the script.
+1. Use your favourite automated tool, execute the script with `node getAvailability.js`.
 1. You are done!
