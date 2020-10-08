@@ -4,7 +4,7 @@ const _ = require('lodash')
 const TelegramBot = require('node-telegram-bot-api')
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_API)
 const currDate = new Date()
-const availabilityUrl = `https://retail-pz.cdn-apple.com/product-zone-prod/availability/${currDate.getUTCFullYear()}-${pad(currDate.getUTCMonth()+1)}-${pad(currDate.getUTCDate())}/${currDate.getUTCHours()}/availability.json`
+const availabilityUrl = `https://retail-pz.cdn-apple.com/product-zone-prod/availability/${currDate.getUTCFullYear()}-${pad(currDate.getUTCMonth()+1)}-${pad(currDate.getUTCDate())}/${pad(currDate.getUTCHours())}/availability.json`
 const locationUrl = 'https://www.apple.com/pza-irb/stores?stageRootPath=%2Fsg&lat=1.29&long=103.86'
 
 function getAvailability() {
