@@ -1,4 +1,5 @@
-require('dotenv').config()
+const path = require('path')
+require('dotenv').config({ path: __dirname+path.sep+'.env' })
 const fetch = require('node-fetch')
 const _ = require('lodash')
 const TelegramBot = require('node-telegram-bot-api')
